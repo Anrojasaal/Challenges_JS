@@ -8,6 +8,20 @@ const btn6thml = document.getElementById("btn6");
 const btn7thml = document.getElementById("btn7");
 const btn8thml = document.getElementById("btn8");
 
+//enlace btn ejercicio letras y numeros
+const btnA1 = document.getElementById("btnA1");
+const btnB2 = document.getElementById("btnB2");
+const btnC3 = document.getElementById("btnC3");
+const btnD4 = document.getElementById("btnD4");
+const btnE5 = document.getElementById("btnE5");
+const btnF6 = document.getElementById("btnF6");
+const btnG7 = document.getElementById("btnG7");
+const btnH8 = document.getElementById("btnH8");
+const btnI9 = document.getElementById("btnI9");
+const btnCL = document.getElementById("btncL");
+const btnJ0 = document.getElementById("btnJ0");
+const btnCN = document.getElementById("btncN");
+
 // funciones de ejercicios
 //Challenge 1
 function challenge1() {
@@ -102,6 +116,255 @@ function challenge8() {
   alert("El primer numero mayor a 50 en el array es: " + numeros[count]);
 }
 
+//ejercicio letras y numeros
+
+let letras = [];
+let numeros = [];
+let letrasTotal = "";
+let numerosTotal = "";
+const letrasInput = document.getElementById("letras");
+const numerosInput = document.getElementById("numeros");
+const errorHtml = document.getElementById("error");
+
+function botonUno() {
+  if (letras.length === 0) {
+    letras.push("A");
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 0) {
+      numeros.push("1");
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
+
+function botonDos() {
+  if (letras.length === 1) {
+    letras.push("B");
+    letrasTotal = "";
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 1) {
+      numeros.push("2");
+      numerosTotal=""
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
+function botonTres() {
+  if (letras.length === 2) {
+    letras.push("C");
+    letrasTotal = "";
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 2) {
+      numeros.push("3");
+      numerosTotal=""
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
+function botonCuatro() {
+  if (letras.length === 3) {
+    letras.push("D");
+    letrasTotal = "";
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 3) {
+      numeros.push("4");
+      numerosTotal=""
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
+function botonCinco() {
+  if (letras.length === 4) {
+    letras.push("E");
+    letrasTotal = "";
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 4) {
+      numeros.push("5");
+      numerosTotal=""
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
+function botonSeis() {
+  if (letras.length === 5) {
+    letras.push("F");
+    letrasTotal = "";
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 5) {
+      numeros.push("6");
+      numerosTotal=""
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
+function botonSiete() {
+  if (letras.length === 6) {
+    letras.push("G");
+    letrasTotal = "";
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 6) {
+      numeros.push("7");
+      numerosTotal=""
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
+function botonOcho() {
+  if (letras.length === 7) {
+    letras.push("H");
+    letrasTotal = "";
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 7) {
+      numeros.push("8");
+      numerosTotal=""
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
+function botonNueve() {
+  if (letras.length === 8) {
+    letras.push("I");
+    letrasTotal = "";
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 8) {
+      numeros.push("9");
+      numerosTotal=""
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
+function botonDiez() {
+  if (letras.length === 9) {
+    letras.push("J");
+    letrasTotal = "";
+    letras.forEach((e) => {
+      letrasTotal += e;
+    });
+    letrasInput.value = letrasTotal;
+  } else {
+    if (letras.length === 10 && numeros.length === 9) {
+      numeros.push("0");
+      numerosTotal=""
+      numeros.forEach((e) => {
+        numerosTotal += e;
+      });
+      numerosInput.value = numerosTotal;
+    } else {
+      errorHtml.innerHTML = "Btn errado - Sigue la secuencia";
+      setTimeout(() => {
+        errorHtml.innerHTML = "";
+      }, 3000);
+    }
+  }
+}
 // Funciones botones
 btn1thml.onclick = function () {
   challenge1();
@@ -126,4 +389,47 @@ btn7thml.onclick = function () {
 };
 btn8thml.onclick = function () {
   challenge8();
+};
+
+//oncliks de letras y numeros
+
+btnA1.onclick = function () {
+  botonUno();
+};
+btnB2.onclick = function () {
+  botonDos();
+};
+btnC3.onclick = function () {
+  botonTres();
+};
+btnD4.onclick = function () {
+  botonCuatro();
+};
+btnE5.onclick = function () {
+  botonCinco();
+};
+btnF6.onclick = function () {
+  botonSeis();
+};
+btnG7.onclick = function () {
+  botonSiete();
+};
+btnH8.onclick = function () {
+  botonOcho();
+};
+btnI9.onclick = function () {
+  botonNueve();
+};
+btnJ0.onclick = function () {
+  botonDiez();
+};
+btnCL.onclick = function () {
+  letras = [];
+  letrasTotal = "";
+  letrasInput.value = "";
+};
+btnCN.onclick = function () {
+  numeros = [];
+  numerosTotal = "";
+  numerosInput.value = "";
 };
